@@ -12,6 +12,19 @@ public class Peca{
         this.corDaPeca = corDaPeca;
     }
 
+    public void setNomeDaPeca(NomeDaPeca nomeDaPeca){
+        this.nomeDaPeca = nomeDaPeca;
+    }
+    public NomeDaPeca getNomeDaPeca(){
+        return nomeDaPeca;
+    }
+    public void setCorDaPeca(CorDaPeca corDaPeca){
+        this.corDaPeca = corDaPeca;
+    }
+    public CorDaPeca getCorDaPeca(){
+        return corDaPeca;
+    }
+
     public static void main(String[] args){
         Tabuleiro tabuleiro = new Tabuleiro();
         tabuleiro.montarTabuleiro();
