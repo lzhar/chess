@@ -7,13 +7,11 @@ import main.backend.enums.NomeDaPeca;
 import java.util.ArrayList;
 
 public class Tabuleiro {
-    private Peca[][] tabuleiro = new Peca[7][7];
+    private CorDaCasa[][] tabuleiro = new CorDaCasa[7][7];
     private CorDaCasa corDaCasa;
+    private ArrayList<Peca> listaDePecas = new ArrayList<>();
 
-
-    public void montarTabuleiro() {
-
-        ArrayList<Peca> listaDePecas = new ArrayList<>();
+    public void iniciarPecas() {
         for (int i = 0; i <= 32; i++) {
             if (i == 0) {
                 Peca torrePretaUm = new Peca(NomeDaPeca.TORRE, CorDaPeca.PRETA);
@@ -119,5 +117,11 @@ public class Tabuleiro {
             System.out.println(mensagem);
         }
 
+    }
+
+    public void montarTabuleiro(){
+        for(int i = 0; i < tabuleiro.length; i++){
+
+        }
     }
 }
